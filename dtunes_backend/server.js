@@ -46,15 +46,17 @@ app.use(cookieParser());
 
 //routes:
 app.use('/api/songs', songRouter);
-app.use('/api/playlists', playlistRouter);
-app.use('/api/users', userRouter);
-app.use('/refresh', refreshRouter);
-app.use('/logout', logoutRouter);
+// app.use('/api/playlists', playlistRouter);
+// app.use('/api/users', userRouter);
+// app.use('/refresh', refreshRouter);
+// app.use('/logout', logoutRouter);
+console.log("hello");
 
 app.get('/', (req, res) => {
     res.send('Server working')
 })
 
+console.log("Hello there i made some changes in newBranch");
 
 //socket.io
 export {io};
