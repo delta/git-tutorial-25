@@ -15,6 +15,8 @@ import { Server } from 'socket.io';
 import http from 'http'
 import { startSocket } from './sockets.js';
 
+console.log("helloworld");
+
 //App config:
 
 const app = express();
