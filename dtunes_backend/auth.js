@@ -12,6 +12,7 @@ function authenticateToken(req, res, next){
         }
         req.authenticatedUser = authenticatedUser;
         next();
+        console.log("Hello");
     })
 
 }
