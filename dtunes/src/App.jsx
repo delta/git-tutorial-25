@@ -14,7 +14,6 @@ function App() {
                 <Route path='/playlists/:id/add-song' element={<OtherViewsMain requestedPath='/playlists/:id/add-song'/>}/>
                 <Route path='/playlists/*' element={<OtherViewsMain requestedPath='/playlists' />}/>
                 <Route path='/songs/*' element={<OtherViewsMain requestedPath='/songs' />}/>
-                <Route path='/users/new' element={<OtherViewsMain requestedPath='/users/new'/>}/>
                 <Route path='*' element={<NormalWithContext/>} />
 
             </Routes>
