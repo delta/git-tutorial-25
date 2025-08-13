@@ -16,7 +16,6 @@ export default function Display({setCollapsedSidebar}) {
 
     return (
         <div style={{background: bgColor}} className="w-[100%]  lg:w-[75%] lg:ml-0 m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto">
-            <ToastContainer/>
             <Navbar setCollapsedSidebar={setCollapsedSidebar}/>
             <Routes>
                 <Route path='/liked-songs' element={<DisplayLikedSongs setBgColor={setBgColor}/>}/>
