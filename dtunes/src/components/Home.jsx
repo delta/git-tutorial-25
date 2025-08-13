@@ -35,19 +35,6 @@ export default function Home({ setBgColor }) {
                 </DisplaySongsUsers>}
 
             {/* DISPLAY OF PLAYLISTS: */}
-            <div className="mb-4">
-                <h1 className="my-5 font-bold text-2xl">Playlists</h1>
-                <div className="flex overflow-x-auto">
-                    {/* liked songs: */}
-                    <PlaylistItem key={uuid()} likedSongs={true} image={assets.like_icon} name='Liked Songs' desc='Find all songs you liked here' />
-                    {/* All playlists */}
-                    {playlistsData.map((ad) => {
-                        if (ad.isPublic || !ad.isPublic && loggedIn && user.playlists.find(pId => pId === ad._id)) {
-                            return <PlaylistItem key={uuid()} name={ad.name} desc={ad.desc} image={ad.image} id={ad._id} />
-                        }
-                    })}
-                </div>
-            </div>
 
             {/* DISPLAY OF SONGS: */}
 
