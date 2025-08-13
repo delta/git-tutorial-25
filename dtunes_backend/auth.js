@@ -2,6 +2,7 @@ import jwt from 'jsonwebtoken'
 
 function authenticateToken(req, res, next){
     //authHeader format: BEARER TOKEN
+    // i am making some new changes here
     const authHeader = req.headers['authorization'];
     const token = authHeader?.split(' ')[1];
     if(!token) return res.status(401).json({success: false, errorCode: 'noToken'});
